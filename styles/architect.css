@@ -193,33 +193,7 @@ main>section {
 
 
 
-/* Responsive media query */
-@media screen and (max-width: 576px) {
 
-  .navbar,
-  .nav-links,
-  .teams {
-    flex-direction: column;
-    /* grid-template-columns: repeat(1,1fr); */
-  }
-
-  .team-img-container,
-  .facts-container,
-  .sponsors-image {
-    grid-template-columns: repeat(1, 1fr);
-
-  }
-
-  .facts-container {
-    justify-items: center;
-    gap: 24px;
-  }
-
-  .our-features {
-    margin-left: 30px;
-
-  }
-}
 
 
 /* sponsors */
@@ -233,19 +207,129 @@ main>section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
-  
+
 }
-.sponsors-image img{
+
+.sponsors-image img {
   filter: grayscale(100%);
 }
 
-@media screen and (max-width: 576px) and (min-width: 992px) {
+
+
+/* feautures section style  */
+
+.features {
+  gap: 140px;
+
+}
+
+
+#features-section-title {
+  border-left: 5px solid #FF900E;
+  /* gap: 10px; */
+  /* padding-right: 5px; */
+  /* border-right: 10px; */
+  padding-left: 20px;
+  margin: ;
+}
+
+.features-card {
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
+}
+
+.features-card .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+.features-img-respons img {
+  width: 100%;
+}
+
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: -100px;
+  margin-top: -100px;
+
+}
+
+
+#experience-year {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+
+/* footer  */
+
+.footer {
+  max-width: 1440px;
+  height: 100px;
+  background-color: #FFF4E7;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+  padding: 39px 410px;
+}
+
+/* Responsive media query */
+@media screen and (max-width: 576px) {
+
+  .navbar,
+  .nav-links,
   .teams {
+    flex-direction: column;
+    /* grid-template-columns: repeat(1,1fr); */
+  }
+
+  .team-img-container,
+  .facts-container,
+  .sponsors-image,
+  .features {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .facts-container {
+    justify-items: center;
+    gap: 24px;
+  }
+
+  .our-features {
+    margin-left: 30px;
+
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 992px) {
+  .teams .features {
     flex-direction: column;
   }
 
   .our-features {
     margin: 50px auto;
+  }
+
+  #experience-year {
+    font-weight: 700;
+    font-size: 4rem;
   }
 
 }
